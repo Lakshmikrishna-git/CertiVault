@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CertiVault Login</title>
+
+<style>
+body{
+margin:0;
+font-family: Arial;
+background: linear-gradient(to right, #c7d2fe, #e0f2fe);
+}
+
+.container{
+display:flex;
+height:100vh;
+justify-content:center;
+align-items:center;
+}
+
+.login-box{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0px 0px 15px grey;
+width:400px;
+text-align:center;
+}
+
+h2{
+margin-bottom:10px;
+}
+
+p{
+color:grey;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:1px solid grey;
+}
+
+button{
+width:95%;
+padding:10px;
+background-color:#2563eb;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background-color:#1e40af;
+}
+
+</style>
+</head>
+
+<body>
+    <div style="background-color:#1e3a8a; padding:15px; color:white; text-align:center; font-size:20px;">
+ICEMBatch | CertiVault Student Portal
+</div>
+
+<div class="container">
+
+<div class="login-box">
+
+<img src="logo.png" width="60"><br>
+<h2>CertiVault Portal</h2>
+<p>Student Certificate Management System</p>
+
+<hr>
+
+<input type="text" placeholder="TL Number (Eg: tl25btcs0134)"required>
+<input type="password" placeholder="ERP Password (D/M/YYYY)" required>
+
+<br><br>
+
+<button onclick="login()">Sign In</button>
+<p style="margin-top:10px; font-size:12px; color:grey;">
+Developed by CSE C VAST
+</p>
+
+</div>
+
+</div>
+
+<script>
+function login(){
+window.location.href="dashboard.html";
+}
+</script>
+
+</body>
+</html>
